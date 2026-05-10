@@ -1,6 +1,6 @@
 fun main() {
 
-    var numberOne = 6
+    val numberOne = 6
     println("""
         ${numberOne} x 1 = ${numberOne * 1}
         ${numberOne} x 2 = ${numberOne * 2}
