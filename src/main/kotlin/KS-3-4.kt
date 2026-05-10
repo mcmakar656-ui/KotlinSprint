@@ -13,13 +13,12 @@ fun main() {
     var whereTo = "E4" // Куда
     var strokeNumber = 1 // Номер хода
 
-    val strokeWhite = "$whereFrom-$whereTo;1"
+    val strokeWhite = "$whereFrom-$whereTo;${strokeNumber++}"
     println(strokeWhite)
 
 
     whereFrom = "D2"
     whereTo = "D3"
-    strokeNumber = 2
-    val move = "$whereFrom-$whereTo;${strokeNumber + 1}"
+    val move = "$whereFrom-$whereTo;${strokeNumber++}"
     println(move)
 }
