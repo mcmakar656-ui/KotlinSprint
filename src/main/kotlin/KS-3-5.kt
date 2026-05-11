@@ -19,7 +19,4 @@ fun main() {
     println(whereFrom)
     println(whereTo)
     println(move)
-
-
-
 }
