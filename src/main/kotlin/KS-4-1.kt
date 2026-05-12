@@ -1,4 +1,4 @@
-const val NUMBERS_OF_TABLES = 13
+const val NUMBER_OF_TABLES = 13
 fun main() {
 
     val busyTablesTomorrow = 9
