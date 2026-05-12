@@ -3,7 +3,7 @@ fun main() {
 
     val busyTablesTomorrow = 9
     val busyTablesToday = 13
-    println("[Доступность столиков на сегодня: ${busyTablesToday < NUMBERS_OF_TABLES}],\n[Доступность столиков на завтра: ${busyTablesTomorrow < NUMBERS_OF_TABLES}]")
+    println("[Доступность столиков на сегодня: ${busyTablesToday < NUMBER_OF_TABLES}],\n[Доступность столиков на завтра: ${busyTablesTomorrow < NUMBER_OF_TABLES}]")
 
 
 }
