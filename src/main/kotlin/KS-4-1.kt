@@ -1,12 +1,12 @@
-const val COUNT_TABLE = 13
+const val NUMBERS_OF_TABLES = 13
 fun main() {
 
     val busyTablesToday = 13
     val busyTablesTomorrow = 9
 
-    val freeTablesInHoursToday = (COUNT_TABLE - busyTablesToday) > 0
-    val freeTablesTomorrow = (COUNT_TABLE - busyTablesTomorrow) > 0
-    println("[Доступность столиков на сегодня: ${freeTablesInHoursToday}]\n[Доступность столиков на завтра: ${freeTablesTomorrow}]")
+    val tablesAvailableToday = NUMBERS_OF_TABLES - busyTablesToday > 0
+    val tablesAvailableTommorow = NUMBERS_OF_TABLES - busyTablesTomorrow > 0
+    println("[Доступность столиков на сегодня: ${tablesAvailableToday}]\n[Доступность столиков на завтра: ${tablesAvailableTommorow}]")
 
 }
 
