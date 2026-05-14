@@ -2,7 +2,7 @@ const val WEIGHT_MIN = 35
 const val WEIGHT_MAX = 100
 const val VOLUME_MAX = 100
 
-fun main(){
+fun main() {
 
     // Параметры груза 1
     val incomingCargo = 20
