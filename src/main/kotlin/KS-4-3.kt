@@ -7,6 +7,6 @@ fun main() {
     val airHumidity: Int = 20
     val season: String = "зима"
 
-    val isConditions = isSunny && isTentOpen && airHumidity == REQUIRED_HUMIDITY && WINTER_SEASON == season
+    val isConditions = isSunny && isTentOpen && airHumidity == REQUIRED_HUMIDITY && season != WINTER_SEASON
     println("Благоприятные ли условия сейчас для роста бобовых? $isConditions")
 }
