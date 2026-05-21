@@ -9,10 +9,10 @@ fun main() {
     val hasDamageShip = readln().toBoolean()
 
     // текущий состав экипажа;
-    val countHuman =  readln()?.toInt() ?:0
+    val countHuman = readln()?.toInt() ?:0
 
     // количество ящиков с провизией на борту;
-    val countBox =  readln()?.toInt() ?:0
+    val countBox = readln()?.toInt() ?:0
 
     // благоприятность метеоусловий (Boolean переменная).
     val isWeatherGood = readln().toBoolean()
