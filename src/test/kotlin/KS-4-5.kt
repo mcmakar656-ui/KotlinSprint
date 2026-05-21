@@ -2,8 +2,6 @@ const val MAX_HUMAN = 70
 const val MIN_HUMAN = 55
 const val COUNT_BOX = 50
 
-
-
 fun main() {
     // наличие повреждений корпуса (Boolean переменная);
     val hasDamageShip = readln().toBoolean()
