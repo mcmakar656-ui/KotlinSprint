@@ -9,15 +9,15 @@ fun main() {
     val hasDamageShip = readln().toBoolean()
 
     // текущий состав экипажа;
-    val countHuman = readln()?.toInt()
+    val countHuman = readln().toInt()
 
     // количество ящиков с провизией на борту;
-    val countBox = readln()?.toInt()
+    val countBox = readln().toInt()
 
     // благоприятность метеоусловий (Boolean переменная).
     val isWeatherGood = readln().toBoolean()
 
-    val isWayTravel = (!hasDamageShip && countHuman in MIN_HUMAN..MAX_HUMAN && countBox> COUNT_BOX) ||
+    val isWayTravel = (!hasDamageShip && countHuman in MIN_HUMAN..MAX_HUMAN && countBox > COUNT_BOX) ||
             (hasDamageShip && countHuman == MAX_HUMAN && isWeatherGood && countBox >= COUNT_BOX)
     println(isWayTravel)
 }
