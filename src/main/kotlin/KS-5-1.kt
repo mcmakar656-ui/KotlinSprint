@@ -1,16 +1,16 @@
+import kotlin.random.Random
 fun main() {
 
-    print("Введите первое число: ")
-    val numberOne = readln().toInt()
-    print("Введите второе число: ")
-    val numberTwo = readln().toInt()
-    print("Введите результат: ")
-    val resultNumber = readln().toInt()
-    val resultAuthorization = numberOne + numberTwo
 
-    if(resultAuthorization == resultNumber) {
+    val numberOne = Random.nextInt(1, 100)
+    val numberTwo = Random.nextInt(1, 100)
+    val amountNumbers = numberOne + numberTwo
+    println("Подтвердите, что вы не робот, сложите два числа: ${numberOne} и ${numberTwo} = ")
+    val sumUser = readln().toInt()
+
+    if (amountNumbers == sumUser) {
         println("Добро пожаловать!")
-    } else{
+    } else {
         println("Доступ запрещен.")
     }
 
