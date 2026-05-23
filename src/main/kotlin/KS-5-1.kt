@@ -1,14 +1,11 @@
-import kotlin.random.Random
+
 fun main() {
 
 
-    val numberOne = Random.nextInt(1, 100)
-    val numberTwo = Random.nextInt(1, 100)
-    val amountNumbers = numberOne + numberTwo
-    println("Подтвердите, что вы не робот, сложите два числа: ${numberOne} и ${numberTwo} = ")
-    val sumUser = readln().toInt()
-
-    if (amountNumbers == sumUser) {
+    val numberOne = (1..100).random()
+    val numberTwo = (1..100).random()
+    println("Сложите два числа: $numberOne + $numberTwo")
+    if (readln().toInt() == numberOne + numberTwo) {
         println("Добро пожаловать!")
     } else {
         println("Доступ запрещен.")
