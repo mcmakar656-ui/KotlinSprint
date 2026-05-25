@@ -5,7 +5,7 @@ fun main() {
     val currentYear = 2026
     val userBorn = readln().toInt()
 
-    if (AGE_OF_MAJORITY >= (currentYear - userBorn)) {
+    if ((currentYear - userBorn) >= AGE_OF_MAJORITY) {
         println("Показать экран со скрытым контентом")
     }
 }
