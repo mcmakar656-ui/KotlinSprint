@@ -1,11 +1,11 @@
-const val acceptYear = 18
+const val AGE_OF_MAJORITY = 18
 
 fun main() {
 
     val currentYear = 2026
-    val userYear = readln().toInt()
+    val userBorn = readln().toInt()
 
-    if(acceptYear >= (userYear - currentYear)){
+    if (AGE_OF_MAJORITY >= (currentYear - userBorn)) {
         println("Показать экран со скрытым контентом")
     }
 }
